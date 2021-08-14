@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Home page</title>
+        <link rel="stylesheet" href="/static/css/retro.css">
+        <link rel="stylesheet" href="/static/css/main.css">
+    </head>
+    <body>
+        <form action="/new" method="post">
+            <input type="text" name="new_file" class="new_file" placeholder="New File"></input>
+            <input type="submit" hidden />
+        </form>
+        <ul>
+	    {% for file in files %}
+             <li><a href="/view?file={{file}}">{{file}}</a></li>
+        {% endfor %}
+        </ul>
+    </body>
+</html>

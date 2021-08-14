@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{{ title }}</title>
+        <link rel="stylesheet" href="/static/css/main.css">
+        <link rel="stylesheet" href="/static/css/edit.css">
+        <link rel="stylesheet" href="/static/css/retro.css">
+        <link rel="stylesheet" href="/static/css/native.css">
+    </head>
+    <body>
+        <form action="/save" method="post">
+            <input type="image" name="submit" src="/static/image/content-save.png" class="action_icon" />
+            <textarea name="contents" class="textarea resize-ta" autofocus>{{ content|safe }}</textarea>
+            <input type="hidden" name="file" value="{{ file }}">
+        </form>
+        <script src="/static/js/edit.js"></script>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+.action_icon{
+    float: right;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.new_file {
+    font-family: Menlo, Monaco, "Courier New", monospace;
+    padding: 1px 6px;
+    background-color: #222;  
+    color: #fafafa;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 18px;
+}
